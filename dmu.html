@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>                                             
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compitable" content="IE-=edge">
+        <meta name="viewport" content="width=evice-width,initial-scale=1.0">
+        <meta name="keywords" content="html,css,javascrpit">
+        <meta name="description" content="debre tabor student registration form">
+        <meta base="www.dtu.edu.et.com" target="_blank">
+        
+        <link href="styles.css" rel="stylesheet">
+  
+        <title>DMU student registration</title>
+    </head>
+ 
+    <body><header>
+<H1 id="HSSS">DMU student registration form</H1>
+
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+
+  <nav class="nav">
+    <a href="#">Home</a>
+    <a href="#">Login</a>
+    <a href="#">Logout</a>
+  </nav>
+</header>
+    <main id="main">
+        <h1 id="home"><a href="">student inrollement forms </a>
+
+        </h1>
+<form onsubmit="return submitform()" >
+
+   <h2 id="info">1.student information</h2> 
+    
+<label class="form-label" >first name:</label>
+<input type="text"><br>
+<label>middle name:</label>
+<input type="text"class="form-control" ><br>
+<label>last name:</label>
+<input type="text"class="form-control"><br><br>
+<label>STUDENT ID:</label>
+<input type="text"class="form-control"><br>
+<label>gender:</label>
+<input type="radio" name="gender" value="">male
+<input type="radio" name="gender" value="">female<br><br>
+<label>date of birth:</label>
+<input type="date"class="date of birth"><br>
+<label value="nationality">nationality:</label>
+<input type="text"class="form-control"><br><br>
+<label>region:</label>
+<input type="text"class="form-control"><br><br>
+<label>zone/sub cit</label>
+<input type="text"class="form-control"><br><br>
+<label>woreda:</label>
+<input type="text"class="form-control"><br><br>
+<label>kebele:</label>
+<input type="text"class="form-control"><br><br>
+<h2 id="type1">2.IDENTIFICATION</h2>
+<label>national id no:</label>
+<input type="text"class="form-control"><br><br>
+<h2 id="first">3.acadamic information</h2>
+<label >last school attended:</label>
+<input type="text"class="form-control"><br>
+<label>year of complation:</label>
+<input type="text"class="form-control"><br><br>
+<label>EHEEE/Entrance exam score:</label>
+<input type="text"class="form-control"><br>
+<label>GPA:</label>
+<input type="text"class="form-control"><br><br>
+<h2 id="prog">4.program apply for</h2>
+<label>Faculty:</label>
+                <select name="faculty" required>
+                    <option value="">-- Select Faculty --</option>
+                    <optgroup label="natural science">
+                        <option value="freshman">freshman</option>
+                        <option value="remedial">remedial</option>
+                    <optgroup label="computing">
+                        <option value="computer science"> computer science</option>
+                        <option value="IT">INFORMATION TECHINOLOGY</option>
+                        <OPtion value="software engineering">SOFTWARE ENGINEERING</OPtion>
+                    </optgroup>
+                    <OPtgroup label="engineering">
+                        <option value="civil engineering">CIVIL ENGINEERING</option>
+                        <option value="electrical engineering">ELECTRICAL ENGINEERING</option>
+                        <option value="mechanical engineering">MECHANICAL ENGINEERING</option>
+                        <OPtion value="WATER ENGINEERING">WATER ENGNINEERING</OPtion>
+                        <OPtion value="CHEMICAL ENGINEERING">CHEMICAL ENGINEERING</OPtion>
+</optgroup>
+<OPtgroup label="HEALTH SCIENCE">
+    <OPtion value="public health">PUBLIC HEALTH</OPtion>
+    <OPtion value="MEDICINE">MEDICINE</OPtion>
+    <OPtion value="NURSING">NURSING</OPtion>
+    <OPtion value="PHARMACY">PHARMACY</OPtion>
+    <OPtion value="VETERINARY">VETERNARY</OPtion>
+    <OPtion value="MUDWIFER ">MUDWIFER </OPtion>
+    <OPtion value="ENVIROMENTAL SCIENCE">ENVIRONMENTAL SCIENCE</OPtion>
+</OPtgroup></optgroup>
+                    <optgroup label="social science">
+                        <option value="freshman">freshman</option>
+                        <option value="remedial">remedial</option>
+<option value="economics">economics</option>
+<option value="accounting">accounting</option>
+<option value="law">law</option>
+<option value="marketing">marketing</option>
+<option value="pic and development">pic and development</option>
+<option value="geography">geography</option>          
+</optgroup>
+    <optgroup></optgroup>
+                </select> 
+<label>Department:</label>
+                <input type="text" name="department" required><br>
+<label >program type:</label><br>
+<input type="radio" name="program type" value="">ungraduate<br><br>
+<input type="radio" name="program type" value="">postgraduate<br><br>
+<label>study mode:</label><br>
+<input type="radio" name="study mode" value="">regular
+<input type="radio" name="study mode" value="">distance <br>
+<input type="radio" name="study mode" value="">extension<br><br>
+<label>year/semester:</label>
+<input type="text"class="form-control"><br><br>
+<h2 id="sami"> 5 .supporting documents(check)</h2>
+<input type="checkbox" name="high school certificate:">high school certificate <br>
+<input type="checkbox" name="academic transcrpits :">acadamic transcrpits <br>
+<input type="checkbox" name="entrance exam result:">entrance exam result <br>
+<input type="checkbox" name="national id copy:">national id copy <br>
+<h2 id="samson">6.Emergency contact</h2>
+<label >full name:</label>
+<input type="text"class="form-control"><br>
+<label >relationship:</label>
+<input type="text"class="form-control"><br><br>
+<label >address:</label>
+<input type="text"class="form-control"><br>
+<label" >region:</label>
+<input type="text"class="form-control"><br><br>
+<label >zone:</label>
+<input type="text"class="form-control"><br>
+<label >woreda:</label>
+<input type="text"class="form-control"><br><br>
+<label >kebele:</label>
+<input type="text"class="form-control"><br>
+<label value="phone number">Phone Number:</label>
+<input type="number"class="form-control"><br><br>
+</main>
+<footer id="footer">
+<button type="submit">submit</button>
+<button type="reset"> clear</button>
+
+<button type="button" onclick="showmessage()">check</button>
+</footer>
+</form>
+<h5 id="info">for more information</h5>
+<img src="imgs/photo_2026-02-04_02-32-52.jpg" alt="simachew getnet">
+<h5>simachew getnet:09354546973  <br> or email: simachewgetnet31@gmail.com</5>
+    <h6 background="lightgray"> <a href="https://myaccount.google.com/u/0/yourdata/youtube?hl=en-GB">this  is sime tube</a></h6>
+    <h6 background="lightgray"><a href="https://myaccount.telegram.com/@samsam1616">this is sime telegram channal</a></h6>
+    <h6 background="lightgray"><a href="https://www.yekidanua.com">this is sime tiktok account</a></h6>
+    <script>
+        function showmessage(){
+            alert("student registration form checked successfully!");
+
+        }
+        
+       function submitform(){
+        let answer =confirm("are you sure  want to submit")
+        if (answer){
+            alert("student registration submitted successfully! ");
+            return true;
+        }
+else{
+alert("submitted cancelled"); 
+    return false;
+}
+
+
+       }
+    </script>
+    </body>
+</html>

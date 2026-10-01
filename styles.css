@@ -1,0 +1,197 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+#header {
+    background-color: #004080;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+#header h1 mark {
+    background: none;
+    color: #ffd700;
+}
+
+/* Navigation */
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Main container */
+#main {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Section titles */
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #004080;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Radio & checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0066cc;
+}
+
+/* Footer */
+#footer {
+    max-width: 800px;
+    margin: 10px auto 30px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #main {
+        padding: 15px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* Image styling */
+img {
+    width: 120px;        /* small size */
+    height: 120px;       /* equal width & height for perfect circle */
+    border-radius: 50%;  /* makes it circular */
+    object-fit: cover;   /* prevents image distortion */
+    display: block;
+    margin: 20px auto;   /* center the image */
+}
+
+/* Make it slightly smaller on small screens */
+@media (max-width: 600px) {
+    img {
+        width: 90px;
+        height: 90px;
+    }
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    background-color: blueviolet;
+}
+h5{background-color: #0066cc;}
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+/* Nav hidden by default */
+.nav {
+  display: none;
+  flex-direction: column;
+  background-color: #0d4a84; /* match your blue */
+}
+
+/* Show nav when checked */
+#menu-toggle:checked + .menu-icon + .nav {
+  display: flex;
+}
+
+/* Links styling */
+.nav a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav a:hover {
+  background-color: #08345c;
+}
+#HSSS{background-color: #004080;
+color: white;padding: 10px;
+text-align: center;}
+header{background-color: #004080;}
+#h6{background-color: #ffd700;}

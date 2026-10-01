@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+<body>
+            <h3 class="text-primary">PHP -form processing</h3>
+        <hr style="border-top:1px dotted #ccc;"/>
+ <form method="POST" action="submit.php">
+                <label>Department </label>
+<select name="dept">
+<Option value="CS">CS</Option>
+<Option value="IT">IT</Option>
+<Option value="SW">SW</Option>
+</select><br>
+                   <label>Firstname</label> <br>
+                    <input type="text" name="firstname" required="required"/>  <br>
+                   <label>Lastname</label> <br>
+                    <input type="text" name="lastname" required="required"/><br>
+					 <label>gander</label> <br>
+     <input type="radio" name="gander" value="male" required="required"/>male
+<input type="radio" name="gander" value="female" required="required"/>female<br>
+      <label>email</label> <br>
+       <input type="email" name="email" required="required"/><br>
+	<label>password</label> <br>
+                    <input type="password" name="password" required="required"/><br>
+                   <label>Favorite programing:</label> <br>
+    <input type="checkbox" name="subject[]" value="C++"/>C++ <br />
+                <input type="checkbox" name="subject[]" value="OOP"/>C++ with OOP    <br />
+<input type="checkbox" name="subject[]" value="ojava"/>oop with java     <br />
+<input type="checkbox" name="subject[]" value="History"/>advanced java     <br />
+<button name="save" >Save</button>
+            </form>
+               </body>
+</html>
